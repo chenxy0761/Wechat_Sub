@@ -21,6 +21,9 @@ class WechatSubPipeline(object):
         self.ConSql = """
                     INSERT INTO  QXJ.QXJ_YQ_READNUM_DAY (type, id, name,readnum,thumbs_up_num,dta_date)
                     VALUES ('wechat','%s','%s','%s','%s',to_date('%s','yyyy-mm-dd')) """
+   # self.ConSql = """
+   #                  INSERT INTO  system.QXJ_YQ_READNUM_DAY (type, id, name,readnum,thumbs_up_num,dta_date)
+   #                  VALUES ('wechat','%s','%s','%s','%s',to_date('%s','yyyy-mm-dd')) """
 
     def process_item(self, item, spider):
         if isinstance(item, WecatItem):
