@@ -12,3 +12,10 @@ class WechatSubItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass
+class WecatItem(scrapy.Item):
+    id = scrapy.Field()
+    name = scrapy.Field()
+    click_count = scrapy.Field()
+    likes_count = scrapy.Field()
+    rank_date = scrapy.Field()
+    pass

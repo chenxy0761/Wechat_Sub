@@ -19,7 +19,7 @@ NEWSPIDER_MODULE = 'Wechat_Sub.spiders'
 #USER_AGENT = 'Wechat_Sub (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -64,9 +64,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'Wechat_Sub.pipelines.WechatSubPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'Wechat_Sub.pipelines.WechatSubPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
@@ -88,3 +88,7 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+COOKIE = {
+'Hm_lpvt_a19fd7224d30e3c8a6558dcb38c4beed': '1522374039', '_qddac': '3-1.1qd9sp.jgtikk.jfda5z65', '_qddaz': 'QD.aazmus.1v9gv0.jfc796eo', 'name': '15601615046', 'Hm_lvt_a19fd7224d30e3c8a6558dcb38c4beed': '1522310874,1522310885,1522331039,1522373987', '_qdda': '3-1.1qd9sp', '_qddamta_2852150610': '3-0', 'token': 'AFEDF054FEF056BB6B73F502F00632E4', '_qddab': '3-jgtikk.jfda5z65', 'rmbuser': 'true', 'CNZZDATA1253878005': '1453680831-1522306762-https%253A%252F%252Fwww.sogou.com%252F%7C1522371855', 'useLoginAccount': 'true', 'UM_distinctid': '16270aa4201155-03757b7e6ed69-4353468-100200-16270aa4203212', 'tt_token': 'true', '__root_domain_v': '.newrank.cn'
+}
